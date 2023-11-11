@@ -1,0 +1,9 @@
+canvas {
+  background-color: #000000;
+  float: left;
+  margin-right: 10px;
+}
+
+#map {
+  font-family: monospace;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ウィザードリィ風</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <p>3D迷路</p>
+  <input type="button" value="スタート地点に戻る" onclick="startMaze()" />
+  <input type="button" value="左を向く" onclick="rotate(-1)" />
+  <input type="button" value="進む" onclick="move()" />
+  <input type="button" value="右を向く" onclick="rotate(1)" />
+  （進行方向：<span id="dir">東</span>）
+  <input type="checkbox" id="checkMap" onclick="deaw()" />マップを表示
+  <hr />
+  <canvas id="maze" width="640" height="480"></canvas>
+  <div id="map"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
